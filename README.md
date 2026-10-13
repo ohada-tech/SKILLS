@@ -8,6 +8,7 @@ Claude skills for AI video and motion-graphics pre-production. Each skill lives 
 | [`ai-video-continuity-bible`](skills/ai-video-continuity-bible/SKILL.md) | Building consistent character, location, prop, product and brand references before multi-shot generation. |
 | [`blocking-map-builder`](skills/blocking-map-builder/SKILL.md) | Locking seats, props, object counts and camera viewpoints when AI video drifts or duplicates objects. |
 | [`motion-graphics-director`](skills/motion-graphics-director/SKILL.md) | Planning editable motion graphics: kinetic typography, explainers, diagrams, UI/product animations and data visuals. Includes 853 reference prompts for code-built animations. |
+| [`analyze`](skills/analyze/SKILL.md) | Breaking down a Reel, TikTok, Short or a whole creator account: transcript, hook, format, story structure, visual layout, pacing, why it works, and a reusable template. |
 
 ## How they fit together
 
