@@ -34,6 +34,16 @@ Possible techniques:
 
 Use a small set of techniques that reinforce the idea. Do not make every object move at once. At any moment, the viewer should know where to look.
 
+### Reference prompts
+
+`references/opus-5-5-prompts/videos.json` contains 853 prompts that produced code-built animations (see its `README.md` for the fields). When the deliverable is code (HTML/Canvas/SVG/Three.js), search the file for prompts that match the category and stack, and use them to see how others phrased length, style and constraints. Example:
+
+```bash
+python3 -c "import json,sys; [print(v['post_url'], '|', v['prompt'][:200].replace('\n',' ')) for v in json.load(open(sys.argv[1])) if v['category']==sys.argv[2] and sys.argv[3] in v['tech_tags']]" references/opus-5-5-prompts/videos.json explainer svg
+```
+
+Use these prompts as reference only. Credit the creator if you reuse one closely. Records with `prompt_partial: true` contain only part of the original prompt.
+
 ## 3. Separate assets from editable graphics
 
 When images are required, generate or request clean source assets first:
